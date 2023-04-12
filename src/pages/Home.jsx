@@ -1,11 +1,15 @@
 import React from 'react';
 import Header from '../components/header/Header';
+import Services from '../components/services/Services';
+import Solution from '../components/solution/Solution';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <Solution />
+      <Services />
+    </>
   );
 };
 

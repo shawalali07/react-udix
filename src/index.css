@@ -107,3 +107,83 @@
 .subscribeInput:focus {
   outline: none;
 }
+
+.solution {
+  width: 970px;
+  margin: auto;
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.solutionHeading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.solutionText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.services {
+  padding-top: 60px;
+  padding-bottom: 200px;
+  margin: 0px 180px;
+  display: flex;
+  gap: 75px;
+}
+
+.card {
+  color: #222222;
+  width: 310px;
+  padding: 33px 33px;
+  border: 1px solid #381ddb;
+}
+
+.cardPrimary {
+  color: #ffffff;
+  background: #381ddb;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.cardLogo {
+  width: 70px;
+  height: 64px;
+}
+
+.cardHeading {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 38px;
+  font-family: 'Montserrat';
+}
+
+.cardBottom {
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+
+.cardText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Raleway';
+}
+
+.arrow {
+  width: 14px;
+  height: 12px;
+}
