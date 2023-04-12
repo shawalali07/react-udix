@@ -1,12 +1,15 @@
 import { NavLink } from 'react-router-dom';
 
 const NavItem = ({ item }) => {
+  console.log(item);
   return (
-    <NavLink className='link' to={item?.href}>
-      {({ isActive }) => (
-        <li className={`navListItem ${isActive && 'active'}`}>{item?.name}</li>
-      )}
-    </NavLink>
+    <li>
+      <NavLink className='link' to={item?.href}>
+        {({ isActive }) => (
+          <p className={`navListItem ${isActive && 'active'}`}>{item?.name}</p>
+        )}
+      </NavLink>
+    </li>
   );
 };
 

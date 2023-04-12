@@ -54,6 +54,11 @@
   margin-top: 186px;
   display: flex;
   flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
   gap: 40px;
 }
 
@@ -77,6 +82,7 @@
   display: flex;
   gap: 24px;
   padding: 0px 170px;
+  padding-top: 56px;
 }
 
 .btnSubcribe {
@@ -93,7 +99,7 @@
 .subscribeInput {
   width: 350px;
   padding: 16px 0px;
-  padding-left: 40px;
+  padding: 0px 40px;
   border: 1px solid #a3a3a3;
   border-radius: 4px;
 }
