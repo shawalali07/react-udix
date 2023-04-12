@@ -1,28 +1,26 @@
-import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import { navItems } from '../../constants/navItems';
+import { browserRoutes } from '../../routes/browserRoutes';
 import NavItem from './NavItem';
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      <div className='navContainer'>
-        <div className='navLeft'>
+    <nav className='nav'>
+      <div className='navLeft'>
+        <a href={browserRoutes.HOME}>
           <img src={logo} />
-        </div>
-        <div className='navCenter'>
-          <ul className='navList'>
-            {navItems?.map((item) => (
-              <NavItem key={item?.href} item={item} />
-            ))}
-          </ul>
-        </div>
-        <div className='navRight'>
-          <button className='btn'>SIGN IN</button>
-          <button className='btn btnSignup'>SIGN UP</button>
-        </div>
+        </a>
+        <ul className='navList'>
+          {navItems?.map((item) => (
+            <NavItem key={item?.href} item={item} />
+          ))}
+        </ul>
       </div>
-    </div>
+      <div className='navRight'>
+        <button className='btn'>SIGN IN</button>
+        <button className='btn btnSignup'>SIGN UP</button>
+      </div>
+    </nav>
   );
 };
 

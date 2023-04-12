@@ -4,7 +4,7 @@ import { appRoutes } from './constants/appRoutes';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         {appRoutes?.map((route) => (
@@ -15,7 +15,7 @@ function App() {
           />
         ))}
       </Routes>
-    </div>
+    </>
   );
 }
 
