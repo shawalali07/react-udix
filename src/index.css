@@ -316,7 +316,7 @@
   border: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
   .nav {
     margin: 29px 20px;
     display: flex;
