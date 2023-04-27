@@ -3,7 +3,7 @@
   margin: auto;
   padding-top: 50px;
   display: flex;
-  gap: 530px;
+  justify-content: space-between;
 }
 
 .navLeft {
@@ -98,7 +98,6 @@
 
 .subscribeInput {
   width: 350px;
-  padding: 16px 0px;
   padding: 0px 40px;
   border: 1px solid #a3a3a3;
   border-radius: 4px;
@@ -133,7 +132,6 @@
 
 .services {
   padding-top: 60px;
-  padding-bottom: 200px;
   margin: 0px 180px;
   display: flex;
   gap: 75px;
@@ -186,4 +184,212 @@
 .arrow {
   width: 14px;
   height: 12px;
+}
+
+.info {
+  padding-top: 130px;
+  position: relative;
+}
+
+.infoImg {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.46);
+}
+
+.infoContainer {
+  width: 1007px;
+  position: absolute;
+  top: 248px;
+  left: 348px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoContainer h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 78px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.infoContainer span {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoBtn {
+  position: absolute;
+  top: 300px;
+  left: 400px;
+  background: #381ddb;
+  border-radius: 4px;
+  padding: 16px 24px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: capitalize;
+  border: none;
+  color: #ffffff;
+}
+
+.creativityContainer {
+  width: 1080px;
+  margin: auto;
+  padding-top: 130px;
+  display: flex;
+}
+
+.crtRight {
+  padding: 42px 60px;
+}
+
+.crtHeader {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.crtHeader span {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.crtBottom {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.crtBottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.crtBottom ul li {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.crtBottom ul li::before {
+  color: #2e5cff;
+}
+
+.checkSolution {
+  display: flex;
+  gap: 10px;
+  padding-top: 48px;
+}
+
+.checkSolution button {
+  font-weight: 700;
+  font-size: 16px;
+  color: #381ddb;
+  border: none;
+}
+
+@media screen and (max-width: 375px) {
+  .nav {
+    margin: 29px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 305px;
+  }
+  .navList {
+    display: none;
+  }
+  .navRight {
+    display: none;
+  }
+  .menuBtn {
+    padding: 8px 16px;
+    border: 1px solid #381ddb;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #381ddb;
+  }
+  .top {
+    width: 335px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerText {
+    width: 334px;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    padding: 0px 20px;
+    padding-top: 40px;
+  }
+
+  .subscribeInput {
+    width: 250px;
+    padding: 13px 35px;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+  }
+  .btnSubcribe {
+    padding: 13px 43px;
+  }
+  .solution {
+    width: 315px;
+    margin: auto;
+    padding-top: 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 335px;
+    margin: auto;
+  }
+}
+
+.menuBtn {
+  /* display: none; */
 }

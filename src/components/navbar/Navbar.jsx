@@ -20,6 +20,9 @@ const Navbar = () => {
         <button className='btn'>SIGN IN</button>
         <button className='btn btnSignup'>SIGN UP</button>
       </div>
+      <div>
+        <button className='menuBtn'>Menu</button>
+      </div>
     </nav>
   );
 };
