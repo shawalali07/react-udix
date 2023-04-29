@@ -5,7 +5,9 @@ const Navbar = () => {
     <div className='primary-header'>
       <div className='container'>
         <div className='top-left'>
-          <img src={logo} alt='' />
+          <a href='#'>
+            <img src={logo} alt='' />
+          </a>
           <ul className='top-ul text-secondary fw-medium uppercase'>
             <li className='top-li'>
               <a className='link' href='#'>

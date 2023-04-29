@@ -78,9 +78,14 @@ svg {
 .text-secondary {
   color: #222222;
 }
-
+.text-black {
+  color: #000000;
+}
+.text-white {
+  color: #ffffff;
+}
 .bg-primary {
-  color: #381ddb;
+  background-color: #381ddb;
 }
 
 .fs-primary-heading {
@@ -124,9 +129,6 @@ svg {
   text-transform: uppercase;
 }
 
-.button {
-}
-
 /* general styling */
 
 body {
@@ -157,6 +159,7 @@ body {
 .top-left {
   display: flex;
   gap: 120px;
+  align-items: center;
 }
 
 .top-ul {
@@ -186,10 +189,52 @@ body {
   display: none;
 }
 
-@media (max-width: 375px) {
+.section1 {
+  padding-top: 108px;
+}
+
+.section1-header {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section1-container {
+  max-width: 832px;
+  margin: auto;
+}
+
+.section1-text {
+  max-width: 580px;
+  margin: auto;
+}
+
+.section1-footer {
+  padding-top: 56px;
+  max-width: 524px;
+  margin: auto;
+  display: flex;
+  gap: 24px;
+}
+
+.section1-input {
+  padding: 16px 40px;
+  width: 350px;
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  padding: 16px 38px;
+  border: none;
+  border-radius: 4px;
+}
+
+@media (min-width: 320px) and (max-width: 460px) {
   .container {
     max-width: 375px;
-    margin: 29px 20px;
+    margin: 0px 20px;
   }
   .top-ul {
     display: none;
@@ -199,5 +244,21 @@ body {
   }
   .top-right-mobile {
     display: block;
+  }
+  .section1-container {
+    max-width: 375px;
+    margin: 0px 20px;
+  }
+  .fs-primary-heading {
+    font-size: 36px;
+  }
+  .section1-footer {
+    padding-top: 40px;
+    max-width: 335px;
+    margin: 0px 20px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
   }
 }
