@@ -1,13 +1,203 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* reset start */
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* reset end */
+
+/* Utility classes */
+
+.text-primary {
+  color: #381ddb;
+}
+.text-secondary {
+  color: #222222;
+}
+
+.bg-primary {
+  color: #381ddb;
+}
+
+.fs-primary-heading {
+  font-size: 56px;
+}
+.fs-secondary-heading {
+  font-size: 34px;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+.fw-semi-bold {
+  font-weight: 500;
+}
+.fw-medium {
+  font-weight: 600;
+}
+.fw-bold {
+  font-weight: 700;
+}
+
+.ff-secondary {
+  font-family: Raleway;
+}
+
+.fs-400 {
+  font-size: 14px;
+}
+.fs-500 {
+  font-size: 16px;
+}
+.fs-600 {
+  font-size: 18px;
+}
+.fs-700 {
+  font-size: 24px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.button {
+}
+
+/* general styling */
+
+body {
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #381ddb;
+}
+
+/* regular css */
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.primary-header {
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-left {
+  display: flex;
+  gap: 120px;
+}
+
+.top-ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.top-right {
+  display: flex;
+  gap: 40px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-weight: 600;
+}
+
+.outline {
+  border: 1px solid #381ddb;
+}
+
+.top-right-mobile {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin: 29px 20px;
+  }
+  .top-ul {
+    display: none;
+  }
+  .top-right {
+    display: none;
+  }
+  .top-right-mobile {
+    display: block;
+  }
 }
