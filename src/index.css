@@ -78,6 +78,9 @@ svg {
 .text-secondary {
   color: #222222;
 }
+.text-light {
+  color: rgba(34, 34, 34, 0.7);
+}
 .text-black {
   color: #000000;
 }
@@ -107,6 +110,9 @@ svg {
 .fw-bold {
   font-weight: 700;
 }
+.fw-boldest {
+  font-weight: 800;
+}
 
 .ff-secondary {
   font-family: Raleway;
@@ -124,9 +130,16 @@ svg {
 .fs-700 {
   font-size: 24px;
 }
+.fs-800 {
+  font-size: 28px;
+}
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* general styling */
@@ -231,6 +244,62 @@ body {
   border-radius: 4px;
 }
 
+.section2 {
+  /* padding-top: 130px; */
+}
+
+.section2-container {
+  width: 970px;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  gap: 40px;
+}
+
+.cards-container {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  gap: 75px;
+}
+
+.card {
+  max-width: 310px;
+}
+
+.card-body {
+  padding: 34px 30px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+}
+
+.card-footer {
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+
+.card-primary {
+  background-color: #381ddb;
+  color: #ffffff;
+}
+
+.card-light {
+  background-color: #ffffff;
+  color: #222222;
+  border: 1px solid #381ddb;
+}
+
+.mobile-divider {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 460px) {
   .container {
     max-width: 375px;
@@ -252,6 +321,9 @@ body {
   .fs-primary-heading {
     font-size: 36px;
   }
+  .fs-secondary-heading {
+    font-size: 28px;
+  }
   .section1-footer {
     padding-top: 40px;
     max-width: 335px;
@@ -260,5 +332,25 @@ body {
     gap: 16px;
     flex-direction: column;
     align-items: center;
+  }
+  .mobile-divider {
+    display: block;
+    max-width: 335px;
+    margin: 62px 20px;
+  }
+  .section2 {
+    max-width: 315px;
+    margin: 0px 30px;
+  }
+  .section2-container {
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 }
